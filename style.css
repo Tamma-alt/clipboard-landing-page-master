@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .container {
@@ -12,4 +20,139 @@
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 1%, 17%);
+    display: block;
+}
+
+.hero {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    padding: 4rem 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.logo {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header span {
+    display: block;
+}
+
+.ios-btn,
+.mac-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem .5rem;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 96%);
+}
+
+.ios-btn {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 1px 2px 3px 1px hsl(171, 66%, 44%);
+}
+
+.mac-btn {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 1px 2px 3px 1px hsl(233, 100%, 69%);
+}
+
+.keep__track {
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.computer div {
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+.access {
+    margin-bottom: 2rem;
+}
+
+.access img {
+    margin-top: 3rem;
+}
+
+.supercharge div {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.supercharge div img{
+    margin: 2rem auto;
+}
+
+.companies .container{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 0;
+    margin: 2rem auto;
+}
+
+.call-to-action {
+    padding: 1rem 0;
+    margin: 2rem auto;
+}
+
+footer {
+    background-color: hsl(201, 11%, 66%);
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+footer .logo {
+    width: 30%;
+}
+
+.link {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.socials {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+    .hero {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .header span {
+        display: inline;
+    }
+    
+    .ios-btn,
+    .mac-btn {
+        display: inline;
+        width: 50%;
+    }
+    
+    
 }
