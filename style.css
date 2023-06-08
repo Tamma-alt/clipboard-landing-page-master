@@ -9,6 +9,7 @@
 body {
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1.2rem;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -28,6 +29,11 @@ a {
     display: block;
 }
 
+p {
+    color: hsl(0, 0%, 42%);;
+    opacity: .9;
+}
+
 .hero {
     background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
@@ -37,7 +43,7 @@ a {
 
 .logo {
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .header {
@@ -54,6 +60,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .ios-btn,
@@ -64,11 +71,10 @@ a {
     border: none;
     border-radius: 2rem;
     color: hsl(0, 0%, 96%);
-}
-.ios-btn:hover,
-.mac-btn:hover {
-   cursor: pointer;
-   opacity: .8;
+
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .ios-btn {
@@ -79,6 +85,12 @@ a {
 .mac-btn {
     background-color: hsl(233, 100%, 69%);
     box-shadow: 1px 2px 3px 1px hsl(233, 100%, 69%);
+}
+
+.ios-btn:hover,
+.mac-btn:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 
 .keep__track {
@@ -142,7 +154,8 @@ footer .logo {
     margin: 1rem 0rem 2rem 0rem;
 }
 
-.link:hover {
+.link:hover,
+.link:active {
     cursor: pointer;
     color: hsl(171, 66%, 44%);
 }
@@ -161,7 +174,6 @@ footer .logo {
 }
 
 @media (min-width: 700px) {
-
     img {
         max-width: 60%;
     }
@@ -206,17 +218,10 @@ footer .logo {
     .computer {
         text-align: start;
         font-size: 1rem;
+        margin-left: -20rem;
     }
 
-    .computer div {
-        width: 80%;
-    }
-
-    .computer img {
-        margin-left: -10rem;
-    }
-
-    .access p{
+    .access p {
         width: 70%;
         margin: 0 auto;
     }
